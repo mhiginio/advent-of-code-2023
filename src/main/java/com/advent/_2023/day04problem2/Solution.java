@@ -4,10 +4,10 @@ import com.advent._2023.Parser;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Scanner;
+
+import static com.advent._2023.ParseUtils.asIntegerList;
 
 public class Solution {
     public int solution(Parser parser) {
@@ -57,17 +57,8 @@ public class Solution {
         }
 
         private void parseGameData(String[] gameData) {
-            winners = parseIntegers(gameData[0]);
-            played = parseIntegers(gameData[1]);
-        }
-
-        private List<Integer> parseIntegers(String gameData) {
-            Scanner scanner = new Scanner(gameData);
-            List<Integer> result = new ArrayList<>();
-            while (scanner.hasNext()) {
-                result.add(Integer.parseInt(scanner.next()));
-            }
-            return result;
+            winners = asIntegerList(gameData[0]);
+            played = asIntegerList(gameData[1]);
         }
 
         private void parseId(String data) {

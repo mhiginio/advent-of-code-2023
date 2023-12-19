@@ -11,9 +11,6 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 
-/**
- * This uses the shoelace formula and Pick's theorem
- */
 public class Solution {
 
 

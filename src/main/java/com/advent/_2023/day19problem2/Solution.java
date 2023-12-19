@@ -10,9 +10,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-/**
- * This uses the shoelace formula and Pick's theorem
- */
 public class Solution {
 
 

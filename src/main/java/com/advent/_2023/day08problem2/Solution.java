@@ -1,5 +1,6 @@
 package com.advent._2023.day08problem2;
 
+import com.advent._2023.LCMCalculator;
 import com.advent._2023.Parser;
 import lombok.Data;
 
@@ -75,27 +76,5 @@ public class Solution {
     private record Mapping(String left, String right) {
     }
 
-    private static final class LCMCalculator {
-        public static long compute(List<Long> values) {
-            long lcm = values.get(0);
-            long gcd = values.get(0);
 
-            //loop through the array to find GCD
-            //use GCD to find the LCM
-            for (int i = 1; i < values.size(); i++) {
-                gcd = findGCD(values.get(i), lcm);
-                lcm = (lcm * values.get(i)) / gcd;
-            }
-
-            return lcm;
-        }
-
-        public static long findGCD(long a, long b) {
-            //base condition
-            if (b == 0)
-                return a;
-
-            return findGCD(b, a % b);
-        }
-    }
 }

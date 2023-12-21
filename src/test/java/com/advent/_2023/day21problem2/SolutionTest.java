@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SolutionTest {
 
     @Test
-    void provided_data_should_return_3532() {
+    void provided_data_should_return_590104708070703() {
         Solution solution = new Solution();
         InputParser parser = new InputParser(getClass().getResourceAsStream("/day21problem1/input.txt"));
-        assertEquals(3532, solution.solution(parser, 26501365));
+        assertEquals(590104708070703L, solution.solution(parser, 26501365));
     }
 
     @Test

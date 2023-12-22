@@ -7,12 +7,15 @@ import java.util.Scanner;
 public class ParseUtils {
 
     public static List<Integer> asIntegerList(String rawData) {
-        return asIntegerList(rawData, " ");
+        return asIntegerList(rawData, null);
     }
 
     public static List<Integer> asIntegerList(String rawData, String delimiter) {
         List<Integer> result = new ArrayList<>();
-        Scanner scanner = new Scanner(rawData).useDelimiter(delimiter);
+        Scanner scanner = new Scanner(rawData);
+        if (delimiter != null) {
+            scanner.useDelimiter(delimiter);
+        }
         while (scanner.hasNext()) {
             result.add(scanner.nextInt());
         }

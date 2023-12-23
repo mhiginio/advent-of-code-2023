@@ -2,7 +2,6 @@ package com.advent._2023.day08.problem1;
 
 import com.advent._2023.InputParser;
 import com.advent._2023.StringParser;
-import com.advent._2023.day08.problem1.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -39,6 +38,6 @@ class SolutionTest {
     @Test
     void provided_data_should_return_15989() {
         assertEquals(15989,
-                solution.solution(new InputParser(getClass().getResourceAsStream("/day08problem1/input.txt"))));
+                solution.solution(new InputParser(getClass().getResourceAsStream("/day08/input.txt"))));
     }
 }

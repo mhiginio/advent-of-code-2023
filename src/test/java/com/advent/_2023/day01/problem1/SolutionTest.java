@@ -2,7 +2,6 @@ package com.advent._2023.day01.problem1;
 
 import com.advent._2023.InputParser;
 import com.advent._2023.StringParser;
-import com.advent._2023.day01.problem1.Solution;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -36,7 +35,7 @@ class SolutionTest {
 
     @Test
     public void should_compute_correct_value_for_provided_data() {
-        assertEquals(54450, solution.solution(new InputParser(getClass().getResourceAsStream("/day01problem1/input.txt"))));
+        assertEquals(54450, solution.solution(new InputParser(getClass().getResourceAsStream("/day01/input.txt"))));
     }
 
     public static Stream<Arguments> calibrationParams() {

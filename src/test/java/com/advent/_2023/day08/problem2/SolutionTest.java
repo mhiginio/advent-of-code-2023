@@ -30,6 +30,6 @@ class SolutionTest {
     @Test
     void provided_data_should_return_13830919117339() {
         assertEquals(13830919117339L,
-                solution.solution(new InputParser(getClass().getResourceAsStream("/day08problem2/input.txt"))));
+                solution.solution(new InputParser(getClass().getResourceAsStream("/day08/input.txt"))));
     }
 }

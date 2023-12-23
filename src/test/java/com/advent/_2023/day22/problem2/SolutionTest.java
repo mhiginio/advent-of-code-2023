@@ -1,4 +1,4 @@
-package com.advent._2023.day22.problem1;
+package com.advent._2023.day22.problem2;
 
 import com.advent._2023.InputParser;
 import com.advent._2023.StringParser;
@@ -10,7 +10,7 @@ class SolutionTest {
     private final Solution solution = new Solution();
 
     @Test
-    void example_data_should_return_5() {
+    void example_data_should_return_7() {
         String[] data = {
                 "1,0,1~1,2,1",
                 "0,0,2~2,0,2",
@@ -20,13 +20,13 @@ class SolutionTest {
                 "0,1,6~2,1,6",
                 "1,1,8~1,1,9"
         };
-        assertEquals(5, solution.solution(new StringParser(data)));
+        assertEquals(7, solution.solution(new StringParser(data)));
     }
 
     @Test
-    void provided_data_should_return_448() {
+    void provided_data_should_return_57770() {
         Solution solution = new Solution();
         InputParser parser = new InputParser(getClass().getResourceAsStream("/day22/input.txt"));
-        assertEquals(448, solution.solution(parser));
+        assertEquals(57770, solution.solution(parser));
     }
 }

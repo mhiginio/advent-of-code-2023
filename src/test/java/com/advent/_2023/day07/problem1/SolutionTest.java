@@ -2,7 +2,6 @@ package com.advent._2023.day07.problem1;
 
 import com.advent._2023.InputParser;
 import com.advent._2023.StringParser;
-import com.advent._2023.day07.problem1.Solution;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -65,6 +64,6 @@ class SolutionTest {
     @Test
     void provided_data_should_return_241344943() {
         assertEquals(241344943,
-                solution.solution(new InputParser(getClass().getResourceAsStream("/day07problem1/input.txt"))));
+                solution.solution(new InputParser(getClass().getResourceAsStream("/day07/input.txt"))));
     }
 }

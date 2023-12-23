@@ -52,6 +52,6 @@ class SolutionTest {
     @Test
     void provided_data_should_return_17729182() {
         assertEquals(17729182,
-                solution.solution(new InputParser(getClass().getResourceAsStream("/day05problem2/input.txt"))));
+                solution.solution(new InputParser(getClass().getResourceAsStream("/day05/input.txt"))));
     }
 }

@@ -23,6 +23,6 @@ class SolutionTest {
     @Test
     void provided_data_should_return_948() {
         assertEquals(948,
-                solution.solution(new InputParser(getClass().getResourceAsStream("/day09problem2/input.txt"))));
+                solution.solution(new InputParser(getClass().getResourceAsStream("/day09/input.txt"))));
     }
 }
